@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Javascript Project Ideas</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Project Ideas</h1>
+      <div class="main-content">
+        <aside>
+          <ul class="tabs">
+
+            <li class="tab" data-tab-target="#snooker-comp">Snooker Competition</li>
+            <li class="tab"  data-tab-target="#snooker-league">Snooker League</li>
+            <li class="tab"  data-tab-target="#table-system">Pool Hall Table System</li>
+            <li class="tab"  data-tab-target="#quoting-cutsheet">
+              Quoting System <br />
+              - Cut Sheet
+            </li>
+            <li class="tab"  data-tab-target="#quoting-largeformat">
+              Quoting System <br />
+              - Large Format
+            </li>
+            <li class="tab"  data-tab-target="#game">
+              A Simple Game
+            </li>
+
+          </ul>
+        </aside>
+
+        <!-- SNOOKER COMPETITION -->
+        <div id="tab-content">
+          <div id="snooker-comp" data-tab-content>
+            <h2>Snooker Competition Knock Out or Round Robin Generator</h2>
+            <h3>Objective</h3>
+            <p>Create a site that enables users to sign-up for a snooker knock-out or round robin competition</p>
+            <h3>Audience</h3>
+            <i>Front-End:</i> 
+            <p>People who want to sign-up for the competition</p><br>
+            <i>Back-End:</i> 
+            <p>Organisers of the competition who can access database of all entrants and generate a knock-out based on the amount of people joining</p>
+            <h3>Requirements</h3>
+            <p>
+              <ul>
+                <li>Form for entries</li>
+                <li>List of all entrants</li>
+                <li>Generate competition button for admin</li>
+                
+              </ul>
+            </p>
+          </div>
+
+          <!-- SNOOKER LEAGUE -->
+          <div id="snooker-league" data-tab-content>
+            <h2>Snooker League Table & Grading System</h2>
+            <h3>Objective</h3>
+            <p>Create a snooker league system where players can enter results from the matches and submit them for processing. The league table and players' grading will be updated accordingly</p>
+            <h3>Audience</h3>
+            <i>Front-End:</i> 
+            <p>League competitors who will their scores and high breaks.</p><br>
+            <i>Back-End:</i> 
+            <p>League organiser who can approve entries and change them accordingly, in case there is an exception</p>
+            <h3>Requirements</h3>
+            <ul>
+              <li>Table League Display</li>
+              <li>Scores/Results Display</li>
+              <li>High Breaks Display</li>
+              <li>Matches Generator - Matches are set in a distinctive way, 4 players minimum, 7 players maximum each team. Ideally will enable subsitutions but not important for test project</li>
+              <li>Ranking of Players with handicaps, high breaks etc. Must include sorting feature</li>
+              <li>Enter new players(There are always new players who come in as substitutes)</li>
+              <li>(Ideally) Enable a live scoring system</li>
+              
+            </ul>
+          </div>
+
+          <!-- TABLE SYSTEM -->
+          <div id="table-system" data-tab-content class="active">
+            <h2>Pot Black Table Accounting System</h2>
+            <h3>Objective</h3>
+            <p>Create a table system(similar to the one already implemented) where the table time is calculated and the cost is calculated accordingly. The current one in place has very basic functions, one of them is 'transfer' option, in case someone wants to change tables. The cost is transferred over and continued on th other table</p>
+            <h3>Audience</h3>
+            <i>Front-End:</i> 
+            <p>Employees who can simply switch tables on/off for new customers and calculate the cost.</p>
+            <br>
+            <i>Back-End:</i> 
+            <p>Centre owner who can access all data for accounting and inventory purposes.</p>
+            <h3>Requirements</h3>
+            <ul>
+              <li>Graphic Table Display (clickable and keyboard-able)</li>
+              <li>Cost per Time calculator depending on the time spent on the table</li>
+              <li>Specials per person calculator to calculate the cost for the 3-hour special that goes on until 6.30(Cost of table will be compared to cost for the specials -> Cheaper one will be charged)</li>
+              <li>Option to enter amount of people so costs can be split evenly</li>
+              <li>Option to add other costs(food, drink, etc) to the table</li>
+              <li>Option to add people's names to run up a bill that can be paid at the end of their session</li>
+              <li>Ability to add discounts for members or voucher holders</li>
+              <li>Option to transfer tables</li>
+              </ul>
+          </div>
+
+          <!-- QUOTING - CUT SHEET -->
+            <div id="quoting-cutsheet" data-tab-content>
+            <h2>Cut Sheet Quoting System</h2>
+            <h3>Objective</h3>
+            <p>Create a cut sheet quoting system that calculates the cost of producing prints on a sheet of any given size. An n-up calculator is used to calculate the amount of sheets used. Variations include quantity, size, type of printing, paper stock etc.</p>
+            </div>
+
+          <!-- QUOTING - LARGE FORMAT -->
+            <div id="quoting-largeformat" data-tab-content>
+            <h2>Cut Sheet Quoting System</h2>
+            <h3>Objective</h3>
+            <p>Create a large format quoting system that calculates the cost of producing large-format products such as posters and signs. A roll calculator is used to determine how much of the roll(depending on the width of the substrate)</p>
+            </div>
+            
+            <!-- GAME -->
+            <div id="game" data-tab-content>
+              <h2>A Simple Game</h2>
+              <h3>Objective</h3>
+              <p>Create a simple(semi-original) game that includes my own graphics to showcase design and coding skills. For portfolio purposes.</p>
+            </div>
+          </div>
+        </div>
+      
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
